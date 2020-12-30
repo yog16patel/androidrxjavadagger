@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+}
+
+dependencies {
+    implementation appDependencies.kotlin_lib
+    implementation appDependencies.retrofit_lib
+
+    implementation appDependencies.rxjava_lib
+    implementation appDependencies.rxandroid_lib
+
+    implementation appDependencies.retrofit_lib_gson_lib
+
+    implementation appDependencies.dagger_lib
+    implementation appDependencies.dagger_android_lib
+
+}
