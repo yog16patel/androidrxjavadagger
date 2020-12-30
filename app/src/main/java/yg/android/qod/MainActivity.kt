@@ -7,6 +7,7 @@ import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
+import kotlinx.android.synthetic.main.activity_main.*
 import yg.android.domain.model.QOD
 import yg.android.usecase.GetQODUseCase
 import javax.inject.Inject
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity(), HasAndroidInjector {
 
     private fun processResponse(qod: QOD) {
         Log.e(TAG,"qod : $qod")
-        //text_view.text = qod.contents.quotes[0].quote
+        text_view.text = qod.contents.quotes[0].quote
     }
 
     override fun androidInjector(): AndroidInjector<Any> {

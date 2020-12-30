@@ -4,13 +4,10 @@ import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
-import yg.android.ActivityInjectionModule
+import yg.android.di.ActivityInjectionModule
 import yg.android.QuoteApplication
 import yg.android.annotation.PresentationScope
-import yg.android.domain.DomainComponent
-import yg.android.domain.RepositoryModule
-import yg.android.domain.api.NetworkModule
-import javax.inject.Singleton
+import yg.android.domain.di.DomainComponent
 
 @PresentationScope
 @Component(

@@ -1,4 +1,4 @@
-package yg.android
+package yg.android.di
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector

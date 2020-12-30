@@ -4,7 +4,7 @@ import android.app.Application
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
-import yg.android.domain.DaggerDomainComponent
+import yg.android.domain.di.DaggerDomainComponent
 import yg.android.qod.DaggerPresentationComponent
 import javax.inject.Inject
 

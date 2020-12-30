@@ -1,4 +1,4 @@
-package yg.android.domain
+package yg.android.domain.di
 
 import dagger.Binds
 import dagger.Module

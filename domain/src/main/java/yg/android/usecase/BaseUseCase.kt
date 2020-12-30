@@ -2,6 +2,7 @@ package yg.android.usecase
 
 import io.reactivex.Observable
 import io.reactivex.Observer
+import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.observers.DisposableObserver
@@ -18,7 +19,7 @@ abstract class BaseUseCase<Output> {
         myCompositeDisposable.add(
             observable
                 .subscribeOn(Schedulers.io())
-                .observeOn(Schedulers.computation())
+                .observeOn(AndroidSchedulers.mainThread())
                 .doOnSubscribe {
                     println("${javaClass.simpleName} + executed")
                 }.subscribeWith(observer)
